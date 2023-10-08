@@ -13,6 +13,7 @@ class PersonalData(models.Model):
     flat = models.CharField(max_length=20, help_text="Квартира")
     phone = models.IntegerField(help_text="Номер телефона", validators=[MaxValueValidator(89999999999)])
     vk = models.CharField(max_length=11, help_text="ВК-ID")
+    vk_id = models.CharField(max_length=20, help_text='непонятная хуй2ня', default='clear')
     permission = models.CharField(max_length=20, default='resident', choices=[('re', 'Резидент'),
                                                           ('re-p', 'Резидент-партнер'),
                                                           ('admin', 'Администратор'),
