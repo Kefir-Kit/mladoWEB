@@ -1,0 +1,156 @@
+body {
+    background: #191919;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo_part {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo { 
+    margin: auto 0;
+    text-transform: uppercase; 
+    font-weight: 700; 
+    line-height: 1;
+    font-size: 30px;
+    width: 200px;
+  }
+
+.logo_img {
+    height: 100px;
+}
+
+aside {
+    float: left;
+    background: #191919;
+    width: 20%;
+    height: 100vh;
+    color: #F39319;
+    border-right: 5px solid #F39319;
+}
+
+aside .wrapper {
+    margin: 0 auto;
+    width: max-content;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+    text-align: center;
+}
+
+aside h3:after {
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: block;
+    content: '';
+    background: #F39319;
+    width: 270px;
+    height: 2px;
+}
+
+aside ul {list-style: none}
+
+aside ul li {
+    color: #F39319;
+    display: block;
+    margin-top: 20px;
+    transition: all .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #F39319;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main .features {
+    float: left;
+    color: #F39319;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {font-size: 50px;}
+main .features p {max-width: 400px; margin: 20px auto}
+
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    width: 230px;
+    height: 50px;
+    margin: 25px auto;
+    color: #F39319;
+    background: #313130;
+    border: 2px solid #F39319;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 0 0 black;
+    transition: box-shadow 0.3s;
+}
+
+.button:hover {
+    box-shadow: 0 0 15px #F39319;
+}
+
+.button p {
+    margin: auto auto;
+    width: max-content;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.button_inactive {
+    display: flex;
+    justify-content: space-around;
+    width: 230px;
+    height: 50px;
+    margin: 25px auto;
+    color: #777;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #777;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.button_inactive p {
+    margin: auto auto;
+    width: max-content;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.button_selected {
+    display: flex;
+    justify-content: space-around;
+    width: 230px;
+    height: 50px;
+    margin: 25px auto;
+    color: #F39319;
+    background: rgba(243, 147, 25, 0.4);
+    border: 2px solid #F39319;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.button_selected p {
+    margin: auto auto;
+    width: max-content;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 25px;
+}
