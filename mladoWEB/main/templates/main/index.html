@@ -1,8 +1,19 @@
+{% extends "main/layout.html" %}
 {% load static %}
-{% extends layout.html %}
 
 {% block body %}
+ <aside>
+        <div class="wrapper"><a href="/">
+            <div class="logo_part">
+                <img src="{% static 'img/mladoslavicon.png' %}" alt="logoo" class="logo_img">
+                <span class="logo">система М<span style="color: white">л</span>адослав</span>
+            </div></a>
 
-<h1>123123123123123</h1>
+        <h3>Навигация</h3>
+            <a class="button">
+                <p>Данные</p>
+            </a>
+        </div>
 
+    </aside>
 {% endblock %}
