@@ -21,7 +21,7 @@ def main(request):
                                            )
             new_user.save()
         case 'view':
-            return JsonResponse(models.PersonalData)
+            return JsonResponse(models.PersonalData.objects)
         case 'user_move':
             new_user = models.PersonalData.objects.filter(vk=request_data['vk'][0])[0]
             new_user.vk_id = request_data['user_position'][0]
